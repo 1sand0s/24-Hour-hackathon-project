@@ -15,7 +15,6 @@ JNIEXPORT jint JNICALL Java_jnitest_direc(JNIEnv *env, jobject obj)
 	CvCapture* c;
 	IplImage* p;
 	IplImage* p1;
-	//printf("AGNA COMMAND LINE");
 	int HH,SH,VH,HL,SL,VL;
 	HL=92;
 	HH=179;
@@ -140,7 +139,7 @@ JNIEXPORT jint JNICALL Java_jnitest_direc(JNIEnv *env, jobject obj)
 		  }
 	  }
 	  
-	/* printf("%f ",great);
+	 printf("%f ",great);
 	  if(great>2000 && great<3000)
 	  {
 	   cvDrawContours(p4,contours,CV_RGB(255,0,0),CV_RGB(0,255,0),10,1,CV_AA,cvPoint(0,0));
@@ -153,7 +152,7 @@ JNIEXPORT jint JNICALL Java_jnitest_direc(JNIEnv *env, jobject obj)
 	   cvReleaseImage(&pf);
 	   break;
 	  }
-	 */
+	 
 	 cvCircle(p,cvPoint(620,240),50,CV_RGB(0,100,250),2);
 	  cvCircle(p,cvPoint(120,240),50,CV_RGB(250,100,0),2);
 	  cvCircle(p,cvPoint(320,140),50,CV_RGB(0,250,100),2);
